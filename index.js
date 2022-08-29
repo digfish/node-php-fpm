@@ -134,7 +134,7 @@ module.exports = function (userOptions = {}, customParams = {}) {
           res.writeHead(statusCode, statusMessage, responseHeaders)
           const body = output.slice(head.length)
           res.write(body)
-          res.end()
+          //res.end()
 
           resolve({ headers, body })
         })
